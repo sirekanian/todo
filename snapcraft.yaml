@@ -1,0 +1,17 @@
+name: todo
+base: core24
+version: 1.0.0
+summary: todo command-line app
+description: If you want to get it done, first write it down.
+
+grade: devel
+confinement: devmode
+
+parts:
+  todo:
+    plugin: dump
+    source: https://github.com/sirekanian/todo/releases/download/v$SNAPCRAFT_PROJECT_VERSION/todo-linux-$CRAFT_ARCH_BUILD_FOR-$SNAPCRAFT_PROJECT_VERSION.tar.gz
+
+apps:
+  todo:
+    command: todo
