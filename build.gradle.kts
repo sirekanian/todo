@@ -2,7 +2,7 @@ import org.gradle.internal.os.OperatingSystem
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
-    val kotlinVersion = "2.2.0"
+    val kotlinVersion = "2.2.21"
     kotlin("multiplatform") version kotlinVersion
     kotlin("plugin.serialization") version kotlinVersion
     id("org.sirekanyan.version-checker") version "1.0.14"
@@ -19,7 +19,7 @@ repositories {
 dependencies {
     commonMainImplementation("com.github.ajalt.clikt:clikt-core:5.0.3")
     commonMainImplementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
-    commonMainImplementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.0")
+    commonMainImplementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.2")
 }
 
 kotlin {
