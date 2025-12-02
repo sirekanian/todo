@@ -1,6 +1,6 @@
 name: todo-cli
 base: core24
-version: 1.0.0
+version: 1.0.1
 summary: todo command-line app
 description: If you want to get it done, first write it down.
 
